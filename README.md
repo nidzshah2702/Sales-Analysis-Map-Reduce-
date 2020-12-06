@@ -5,3 +5,14 @@ There is an E-commerce company spanned over multiple countries. The manager want
 I have taken dataset from Kaggle.com
 
 Solution: The solution is straightforward.Mapper will generate key value pairs with country name as key and quantity as value for each invoice. Reducer will receive items grouped  by country and count the total quantity sold in that country.
+
+# To Compile
+javac SalesAnalysis.java -cp %CLASSPATH%
+
+# To Create jar file
+
+jar cf sa.jar SalesAnalysis*.class
+
+# To run
+
+hadoop jar sa.jar SalesAnalysis <input_path> <output_path>
